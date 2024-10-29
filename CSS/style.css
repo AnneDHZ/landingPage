@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Jolly+Lodger&family=Montserrat:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "poppins";
+    background-color: radial-gradient(rgb(139, 195, 245), #1294b8);
+}
+
+header{
+    color: red;
+}
+
+#logo{
+    
+}
+
+.navbar ul, li{
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+.navbar:hover ul, li{
+    cursor: grab;
+}
+
+/* button:hover{
+    cursor: grab;
+} */
+
+.lienRsociaux ul, li{
+    list-style: none;
+
+     
+}
+
+.lienRsociaux:hover ul, li{
+    cursor: grab;
+}
+
+
+.subscribe:hover{
+    cursor: grab;
+}
+
+.imgCat{
+    width: 300px;
+    height: 300px;
+
+}
+
+main{ 
+    
+}
+
+.titleBlack{
+    color: green;
+    text-align: center;
+}
+
+.card{
+    text-align: center;
+}
+
+.titleWhite{
+    color: blue;
+    text-align: center;
+.photos1{
+
+}
+
+
+
+
+
