@@ -66,16 +66,15 @@ header{
 /*partie inférieure*/
 .accueil{
     display: flex; 
-    height: 100vh;
+    height: 80vh;
     justify-content: center;
     align-items: center;
 }
 
 .text{
-    /* width: 100%; */
-    padding: 20px;
+    width: 20%;
+    /* padding: 20px; */
     justify-content: center;
-    
 }
 
 .champEmail{
@@ -89,20 +88,19 @@ input{
     border: none;
     height: 40px;
 }
+
 .btn{
     background-color: rgb(10, 128, 212);
     color: var(--pWhite);
-    height: 30px;
-    width: 100px;
+    height: 20px;
+    width: 50px;
     border:none;
     border-radius:20px;
-    text-align: center;
-   
+    text-align: center;   
 }
 
 .imgCat{
-   width: 100%;
-   padding: 20px;
+   width: 80%;
 }
 
 
