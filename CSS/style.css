@@ -22,9 +22,7 @@ header{
     background: radial-gradient( #8bc3f5, #1294b8);
     height: 100vh;
     width: 100%;
-    /* background-color: radial-gradient(#8bc3f5, #1294b8); */
-    height: 100vh;
-    background-color: #8bc3f5;
+   
 }
 /*partie supérieure*/
 .bandeau{
@@ -99,27 +97,6 @@ header{
 
 input{
     border: none;  
-    height: 80vh;
-    justify-content: center;
-    align-items: center;
-}
-
-.text{
-    width: 20%;
-    /* padding: 20px; */
-    justify-content: center;
-}
-
-.champEmail{
-   background-color: aliceblue;
-   opacity: 60%;
-   border-radius: 20px;
-   width: 50%;
-}
-
-input{
-    border: none;
-    height: 40px;
 }
 
 .btn{
@@ -189,15 +166,6 @@ input{
     
 .card h3, p{
     padding: 10px;
-    height: 20px;
-    width: 50px;
-    border:none;
-    border-radius:20px;
-    text-align: center;   
-}
-
-.imgCat{
-   width: 80%;
 }
 
 .card:hover{
@@ -209,6 +177,7 @@ input{
     height: 60vh;
 }
 
+/* juste pour le commit push */
 
 /* footer */
 
