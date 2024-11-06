@@ -10,20 +10,58 @@ utilisable ensuite dans les classes par var(--...); */
 :root {
     --titleBlack: black;
     --titlewhite: white;
-    --pBlack: grey;
-    --pWhite: white;
+    --parGrey: grey;
+    --parWhite: white;
+    --padding: 50px 20px;
 }
 
+/* définitions des caractères communs aux sections */
 body{
     font-family: "poppins";
 }
+
+section {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 70px;
+}
+
+section h2{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.sectionHeader{
+    font-size: 20px;
+    padding: 50px 300px 50px 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.titleBlack {
+    color: var(--titleBlack);
+}
+
+.titleWhite {
+    color: var(--titlewhite);
+}
+
+.parGrey{
+    color: var(--parGrey);
+}
+
+.parWhite{
+    color:var(--parWhite)
+}
+
 /* première page*/
 header{
     background: radial-gradient( #8bc3f5, #1294b8);
     height: 100vh;
     width: 100%;
-   
 }
+
 /*partie supérieure*/
 .bandeau{
     display: flex;
@@ -34,7 +72,7 @@ header{
 }
 
 #logo{
-    color: var(--pWhite);
+    color: white;
     font-size: 200%;
     font-weight: 600;
 }
@@ -46,13 +84,13 @@ header{
 }
 
 .navBar a{
-    color: var(--pWhite);
+    color: white;
     text-decoration: none;
     justify-content: center;
     align-items: center;
 }
 
-.lienRsociaux ul, li{
+.lienRsociaux ul li{
     display: flex;
     list-style-type: none;
     justify-content: center;
@@ -60,13 +98,13 @@ header{
 }
 
 .lienRsociaux a{
-    color: var(--pWhite);
+    color: white;
     text-decoration: none;
 }
 
 .iconHamburger a{
     list-style-type: none;
-    color: var(--pWhite);
+    color:white;
     font-size: 20px;
 }
 
@@ -124,66 +162,20 @@ input{
 
 
 
-
-
 /* main  */
 
-
-.titleBlack h2{
-    font-size: 30px;
-    font-weight: 600;
-    text-align: center;
-    padding-top: 100px;
-    padding-bottom: 20px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.titleWhite h2{
-    /* color: var(--titlewhite); */
-    font-size: 30px;
-    font-weight: 600;
-    text-align: center;
-    padding-top: 100px;
-    padding-bottom: 20px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.titleBlack p{
-    font-size: 20px;
-    line-height: 150%;
-    text-align: center;
-    color : var(--pBlack);
-    padding: 10px 300px 200px 300px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 70%;
-}
-
-.titleWhite p{
-    font-size: 20px;
-    line-height: 150%;
-    text-align: center;
-    /* color : var(--pWhite); */
-    padding: 10px 300px 200px 300px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 70%;
-}
 
 /* products features */
 .cardPage2{
     display: flex;
     justify-content: center;
     gap: 40px;
-    height: 60vh;
 }
-    
+
 .card{
     align-items: center;
     text-align: center;
-    color: var(--pWhite);
+    color: white;
     background: radial-gradient( #8bc3f5, #1294b8);
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
     width: 350px;
@@ -198,25 +190,21 @@ input{
     padding: 10px;
 }
     
-.card h3, p{
+.card h3, .card p{
     padding: 10px;
 }
 
 .card:hover{
-    transform:translateY(-30px) ;
+    transform:translateY(-30px);
 }
 
 /* how it works */
 .howItWorks{
     background-color: #f6f6f6;
-    height: 80vh;
     padding: 60px;
 }
 
 /* team */
-.team{
-    /* height: 100vh; */
-}
 
 .photoTeam{
     display: flex;
@@ -225,86 +213,161 @@ input{
     gap: 100px;
 }
 
-.photos1{
+.cardTeam{
     text-align: center;
     border: 1px solid black;
-    transition: 1s;
+    transition: 3s;
 }
 
-.photo1header h4{
+.headerCteam h4{
     font-size: 25px;
     font-weight: 600;
 }
 
-.photo1header p{
-    color:var(--pBlack);
+.headerCteam p{
+    color: Black;
     padding-top: 0;
     padding-bottom: 30px;
     font-size: 15px;
 }
 
-.nom{
-    font-size: 20px;
-}
-
-.job{
-    color:var(--pBlack);
-    font-size: 15px;
-}
-
-.Img1 {
-    overflow: hidden;     
-}
-
-.photo1img {
-    filter: grayscale(1);
-    width: 250px;
-    height: auto;
-    border-radius: 50%;
-    transition: 1s;    
-    object-fit: cover;
+.bodyCteam {
     position: relative;
 }
 
-.photo1img:hover {
-   filter: none;
-   transform: scale(1.1);
-}
-
-.liensR1{
-    transform: translateX(-60%);
-    /* opacity: 0; */
-    /* transition: opacity 0.5 ease; */
-}
-.liensReseaux i{
-    /* position: absolute; */
-    color:black;
-    background-color: blue;
-    width: 20px;
-    height: 20px;
+/* pour que le zoom se fasse "sur l'image" seulement, il faut le border radius sur la div contenant l'image pas sur l'image elle même donc ici sur imgTeam et pas sur person*/
+.imgTeam {
+    overflow: hidden;
     border-radius: 50%;
-    /* display: flex; */
-    /* align-items: center; */
-    /* justify-content: center; */
-    /* font-size: 16px; */
+    transition: 1s;
 }
 
-.img:hover .lienReseaux i {
+.person {
+    overflow: hidden;
+    width: 250px;
+    filter: grayscale(1);
+    object-fit: cover;
+    transition: 1s;
+}
+
+.person:hover {
+    filter: none;
+    transform: scale(1.1);
+}
+
+.liensRteam {
+    position: absolute;
+    top: 0;
+    left: -40px;
+    transition: 1s;
+    opacity: 0;
+}
+
+.cardTeam:hover .liensRteam {
+    left: -10px;
+    top: 90px;
     opacity: 1;
 }
 
+.liensRteam li a i{
+    color:black;
+    background-color: white;
+    /* background-color: red; */
+    padding: 5px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    transition: 1s;
+}
+
+.nom{
+    font-size: 20px;
+    padding: 0;
+}
+
+.job{
+    color: var(--parGrey);
+    font-size: 15px;
+}
+
+
+/* let's get started */
+
+.letsGo {
+    background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+     url("img/parallax.png");
+    opacity: 0.8;
+    background-clip: padding-box;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.getStarted{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 60px;
+}
+
+.start {
+    height: 40px;
+    width: 120px;
+    color: white;
+    background-color: rgba(255, 255, 255, 0); /*on met une couleur transparente pour effacer le fond */
+    border-radius: 5px;
+    border: 1px solid white;
+    transition: 1s;
+}
+
+.start:hover {
+    transform:translateY(-10px) ;
+    background-color: azure;
+    color: black;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* client says */
+
+.logo {
+    width: 100%;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    padding: 30px; 
+}
+
+.logo li {
+    list-style: none;
+    width: 150px;
+    height: 150px;
+}
+
+.logo li img {
+    width: 100%;
+    /* height: 100%; */
+    object-fit: cover;
+}
 
 
 
+/* digital creativity */
 
+.digitalCreativity {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 30px;
+}
+.create{
+    width: 50%;
+}
 
-
-
-
-
-
-
-
+.creativity{
+    width: 30%;
+    /* padding: 50px 150px 50px 0; */
+}
 
 /* footer */
 
