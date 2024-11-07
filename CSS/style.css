@@ -12,7 +12,6 @@ utilisable ensuite dans les classes par var(--...); */
     --titlewhite: white;
     --parGrey: grey;
     --parWhite: white;
-    --padding: 50px 20px;
 }
 
 /* définitions des caractères communs aux sections */
@@ -81,6 +80,7 @@ header{
     display: flex;
     list-style: none;
     margin: 20px;
+    gap: 3%;
 }
 
 .navBar a{
@@ -88,6 +88,10 @@ header{
     text-decoration: none;
     justify-content: center;
     align-items: center;
+}
+
+.lienRsociaux ul {
+    display: flex;
 }
 
 .lienRsociaux ul li{
@@ -208,14 +212,11 @@ input{
 
 .photoTeam{
     display: flex;
-    align-items: center;
     justify-content: center;
     gap: 100px;
 }
 
 .cardTeam{
-    text-align: center;
-    border: 1px solid black;
     transition: 3s;
 }
 
@@ -237,17 +238,19 @@ input{
 
 /* pour que le zoom se fasse "sur l'image" seulement, il faut le border radius sur la div contenant l'image pas sur l'image elle même donc ici sur imgTeam et pas sur person*/
 .imgTeam {
-    overflow: hidden;
     border-radius: 50%;
+    overflow: hidden;
     transition: 1s;
+    padding-bottom: 0;
 }
 
 .person {
-    overflow: hidden;
-    width: 250px;
+    height: 250px;
     filter: grayscale(1);
     object-fit: cover;
     transition: 1s;
+    display: block;
+    /* display block permet de figer l'image dans son contenant en prenant les proportions adéquates. sinon il y a un petit décalage entre l'image et le contenant */
 }
 
 .person:hover {
@@ -261,10 +264,11 @@ input{
     left: -40px;
     transition: 1s;
     opacity: 0;
+    list-style: none;
 }
 
 .cardTeam:hover .liensRteam {
-    left: -10px;
+    left: 10px;
     top: 90px;
     opacity: 1;
 }
@@ -272,7 +276,6 @@ input{
 .liensRteam li a i{
     color:black;
     background-color: white;
-    /* background-color: red; */
     padding: 5px;
     width: 25px;
     height: 25px;
@@ -313,7 +316,8 @@ input{
     height: 40px;
     width: 120px;
     color: white;
-    background-color: rgba(255, 255, 255, 0); /*on met une couleur transparente pour effacer le fond */
+    background-color: rgba(255, 255, 255, 0); 
+    /*on met une couleur transparente pour effacer le fond */
     border-radius: 5px;
     border: 1px solid white;
     transition: 1s;
@@ -354,20 +358,271 @@ input{
 
 /* digital creativity */
 
-.digitalCreativity {
+.digitalCreative {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding-bottom: 30px;
+    justify-content: center;
+
 }
 .create{
     width: 50%;
+    text-align: left;
+    padding: 50px 200px 50px 300px;
 }
 
 .creativity{
-    width: 30%;
-    /* padding: 50px 150px 50px 0; */
+    width: 50%;
+    padding: 100px 300px 100px 50px;
 }
+
+.creativity img{
+    width: 100%;
+}
+
+.create h3{
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+.create p {
+    font-size: 15px;
+    padding-bottom: 30px;
+}
+
+.number{
+    display: flex;
+    gap: 50px
+}
+
+.number h4{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.number p{
+    font-size: 15px;
+    color: grey;
+}
+.create a{
+    background-color: rgb(91, 154, 209);
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    text-decoration: none;
+}
+
+
+
+/* our princing */
+
+.ourPricing{
+    background-color: #f6f6f6;
+}
+
+.pricing{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    /* border: 2px solid red; */
+    padding: 50px;
+}
+
+
+.cardPrice{
+    /* border: 2px solid rgb(247, 227, 42); */
+    width: 300px;
+    height: 400px;
+    border-radius:10px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.headerPrice{
+    /* border: 3px solid blue; */
+    padding: 20px;
+}
+
+.headerPrice1{
+    display: flex;
+    justify-content: center;
+}
+
+.price{
+    /* border: 3px solid green; */
+    display: inline-block;
+    padding: 10px;
+}
+
+.price-color {
+    color: rgb(91, 154, 209);
+    font-weight: 500;
+    font-size: 40px;
+}
+
+.month{
+    color: grey;
+}   
+
+.details{
+    /* border: 3px solid orange; */
+    padding: 20px;
+    line-height: 2;
+    font-weight: 500;
+}
+
+
+.details li {
+    display: flex;
+    justify-content: space-between;
+}
+
+.details i.icon-green{
+    color: green;
+}
+.details i.icon-red{
+    color: red;
+}
+
+.joinNow1{
+    background-color: rgb(91, 154, 209) ;
+    color: white;
+    width: 100%;
+    text-decoration: none;
+    padding: 5px 90px;
+    border-radius: 5px;
+}
+
+.joinNow{
+    border: 1px solid rgb(91, 154, 209) ;
+    color: black; 
+    /* background-color: red; */
+    padding: 5px 90px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.header{
+    /* border: 3px solid blue; */
+    padding: 20px;
+    position: relative;
+    left: 30px;
+}
+
+.promo{
+    /* border: 2px solid red; */
+    background-color: rgb(91, 154, 209);
+    border-radius: 0 10px 0 10px;
+    color: white;
+    width: 60px;
+    position: relative;
+    left: 58px;
+    top: -1px;
+}
+
+.advanced{
+    position: relative;
+    top: -30px;
+}
+/* les border de couleurs aident à structurer */
+
+/* si on veut faire un effet d'un element dans un autre */
+/* .cardPrice:hover .JoinNow {
+    background: red;
+    transform: translateY(-20px);
+} */
+
+
+/* our blog */
+
+.divArticles{
+    /* border: 3px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.article{
+    /* border: 3px solid blue; */
+    width: 400px;
+    height: 500px;
+}
+
+.imgArticle {
+    /* border: 3px solid rgb(4, 159, 4); */
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.imgArticle img {
+    transition: 0.5s;
+    width: 400px;
+    display: block;
+}
+
+.infos:hover {
+    opacity:1;
+}
+
+.infos{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 400px;
+    height: 305px;
+    /* border: 3px solid yellow; */
+    position: absolute;
+    border-radius: 10px;
+    top: 0;
+    left: 0;
+    transition: 1s;
+    opacity: 0;
+}
+
+.auteur{
+    /* border: 3px solid rgb(255, 0, 166); */
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: left;
+    padding: 30px 0 0 30px;
+}
+
+.date{
+    /* border: 3px solid rgb(0, 251, 255); */
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+    text-align-last: left;
+    padding:0 0 0 30px;
+}
+
+.textArticle{
+    /* border: 3px solid rgb(136, 0, 255); */
+    text-align: left;
+}
+
+.textArticle h3{
+    font-size: 15px;
+    font-weight: 600;
+    padding: 10px 0;
+}
+
+.textArticle p{
+    font-size: 10px;
+}
+
+.readMore{
+    /* border: 3px solid rgb(115, 48, 3); */
+    font-size: 12px;
+    color :rgb(91, 154, 209);
+    text-decoration: none;
+    font-weight: 500;
+}
+
 
 /* footer */
 
