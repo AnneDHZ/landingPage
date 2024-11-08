@@ -12,7 +12,8 @@
 </head>
 <body>
 
-    <header><!--première page--> 
+<!--première page-->
+    <header id="home"> 
         <!--barre de navigation et logo-->
         <nav class="bandeau">
             <div>
@@ -24,25 +25,34 @@
             </div> -->
             <div>
                 <ul class="navBar">
-                    <li><a href="" target="_blank">HOME</a></li>
-                    <li><a href="" target="_blank">FEATURES</a></li>
-                    <li><a href="" target="_blank">CLIENT</a></li>
-                    <li><a href="" target="_blank">PRICING</a></li>
-                    <li><a href="" target="_blank">FAQ</a></li>
-                    <li><a href="" target="_blank">ABOUT</a></li>
-                    <li><a href="" target="_blank">BLOG</a></li>
-                    <li><a href="" target="_blank">CONTACT</a></li>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#productsFeatures">FEATURES</a></li>
+                    <li><a href="#clientSays">CLIENT</a></li>
+                    <li><a href="#ourPricing">PRICING</a></li>
+                    <li><a href="#letsGo">FAQ</a></li>
+                    <li><a href="#team">ABOUT</a></li>
+                    <li><a href="#ourBlog">BLOG</a></li>
+                    <li><a href="#reseauxFooter">CONTACT</a></li>
                 </ul>
             </div>
             <div class="lienRsociaux">
                 <ul>
-                    <li><a href="" target="_blank"><i class="fa-brands fa-facebook-f"></i><a></li>
-                    <li><a href="" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
-                    <li><a href="" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="" target="_blank">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <a>
+                    </li>
+                    <li><a href="" target="_blank">
+                        <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li><a href="" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </nav>
-
+<!-- partie inférieure -->
         <div class="accueil"> 
             <div class="text">
                 <h1>We are StartUp Creative Kucra Agency</h1>
@@ -64,11 +74,13 @@
     </header>
     
     <main>
-        <section class="productsFeatures"><!--productsFeatures-->
+<!--productsFeatures-->
+        <section id="productsFeatures">
             <div class="sectionHeader">
                 <h2 class="titleBlack">Products Features</h2>
                 <p class="parGrey">It is a long established fact that a reader will be of a page when established fact looking at its layout</p>
             </div>
+<!-- cards -->
             <div class="cardPage2">
                 <div class="card">
                     <i class="fa-solid fa-globe"></i>
@@ -88,22 +100,26 @@
             </div>
         </section>
         
-        <section class="howItWorks">
+<!-- how it works -->
+        <section id="howItWorks">
             <div class="sectionheader">
                 <h2 class="titleBlack">How it Works?</h2>
                 <p class="parGrey">It is a long established fact that a reader will be of a page when established fact looking at its layout</p>
             </div>
         </section>
 
-
-        <section class="team">
+<!-- team  -->
+        <section id="team">
             <div class="sectionHeader">
                 <h2 class="titleBlack">We'r dynamic team of talented people of innovative & marketing expert</h2>
                 <p class="parGrey">To achieve this, it would be necessary to have uniform grammar, pronunciation and more common words. If several languages of the resulting language.</p>
             </div>
 
+<!-- trombinoscope -->
             <div class="photoTeam">
-                <div class="cardTeam"><!--rassemble les 4 images dans une classe-->
+    <!--rassemble les 4 images dans une classe-->
+        <!-- card1 -->
+                <div class="cardTeam">
                     <div class="headerCteam">
                         <h4>1499+</h4> 
                         <p>Complete Projects</p>
@@ -111,6 +127,7 @@
                     <div class="bodyCteam">
                         <figure class="imgTeam">
                             <img class="person" src="CSS/img/person1.png" alt="person1" />
+                            <!-- div liensTeam enfant de fig imgTeam pour une question de zoom -->
                             <div class="liensTeam">
                                 <ul class="liensRteam">
                                 <li><a href="http://" target="_blank">
@@ -131,7 +148,7 @@
                         <article class="job">CEO/Founder</article>
                     </div>
                 </div>
-            
+        <!-- card2 -->
                 <div class="cardTeam">
                     <div class="headerCteam">
                         <h4>1080K</h4> 
@@ -160,6 +177,7 @@
                         <article class="job">CTO/Co-Founder</article>
                     </div> 
                 </div>
+        <!-- card3 -->
                 <div class="cardTeam">
                     <div class="headerCteam">
                         <h4>608</h4> 
@@ -188,6 +206,7 @@
                         <article class="job">Web Designer</article>
                     </div>
                 </div>
+        <!-- card4  -->
                 <div class="cardTeam">
                     <div class="headerCteam">
                         <h4>252</h4> 
@@ -219,7 +238,8 @@
             </div>    
         </section>
 
-        <section class="letsGo">
+<!-- lets get started -->
+        <section id="letsGo">
             <div class="sectionHeader">
                 <h2 class="titleWhite">Let's get started with Kucra</h2>
                 <p class="parWhite">They are a good way to get you started if you want to build something similar or use from existing apps wich will reduce the cost, efforts and time of the developers.</p>
@@ -229,23 +249,47 @@
             </div>
         </section>
         
-        <section class="clientSays"> <!--what client says?-->
+<!--what client says?-->
+        <section id="clientSays"> 
             <div class="sectionHeader">
                 <h2 class="titleBlack">What your client says</h2>
                 <p class="parGrey">The big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious pulvinar metus molestie sed Semikoli.</p>
             </div>
+        <!-- div logos -->
             <div class="logos">
                 <ul class="logo">
-                    <li><img src="CSS/img/coffee chocolate.png" alt="logo Coffee Chocolate"></li>
-                    <li><img src="CSS/img/fisherman.png" alt="logo Fisherman"></li>
-                    <li><img src="CSS/img/mountainbike.png" alt="logo Mountainbike"></li>
-                    <li><img src="CSS/img/mountain.png" alt="logo Mountain"></li>
-                    <li><img src="CSS/img/market.png" alt="logo Market"></li>
+                    <li>
+                        <a href="" class="coffe">
+                        <img src="CSS/img/coffee chocolate.png" alt="logo Coffee Chocolate">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="fish">
+                        <img src="CSS/img/fisherman.png" alt="logo Fisherman">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="bike">
+                        <img src="CSS/img/mountainbike.png" alt="logo Mountainbike">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="mountain">
+                        <img src="CSS/img/mountain.png" alt="logo Mountain">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="market">
+                        <img src="CSS/img/market.png" alt="logo Market">
+                        </a>
+                    </li>
                 </ul>
             </div>
         </section>
 
-        <section class="digitalCreative"> <!--digital creative landing page-->
+<!--digital creative landing page-->
+        <section id="digitalCreative"> 
+        <!-- div text -->
             <div class="create">
                     <h3 class="titleBlack">We are digital creative Landing Page</h3>    
                     <p class="parGrey">The difference between a succesful person and others is not a lack of strength, not a lack of knowledge, but rather a lack of will. Composed in a pseudo-Latin language which more or less pseudo-Latin language corresponds.</p>           
@@ -261,18 +305,19 @@
                 </div>
                 <a href="learnMore">Learn More</a> 
             </div>
+        <!-- div image -->
             <div class="creativity">
                 <img src="CSS/img/creativity.png" alt="dessins creatifs">
             </div>
         </section>
 
-        <!--Our Pricing-->
-        <section class="ourPricing">
+<!--Our Pricing-->
+        <section id="ourPricing">
             <div class="sectionHeader">
                 <h2 class="titleBlack">Our Pricing</h2>
                 <p class="parGrey">It is a long etablished fact that a reader will be of a page when established fact looking at its layout</p>
             </div>
-
+    <!-- div prix -->
             <div class="pricing">
                 <!-- prix starter-->
                 <div class="cardPrice"> 
@@ -346,7 +391,7 @@
                     </div>
                 </div>
 
-                <!-- prix professionnal -->
+                <!-- prix professionnel -->
                 <div class="cardPrice"> 
                     <div>
                         <h4 class="headerPrice">Professional</h4>
@@ -381,15 +426,15 @@
             </div>
         </section>   
 
-         <!--Our Blog-->
-        <section class="ourBlog">
+<!--Our Blog-->
+        <section id="ourBlog">
             <div class="sectionHeader">
                 <h2 class="titleBlack">Our Blog</h2>
                 <p class="parGrey">It is a long established fact that a reader will be of a page when established fact looking at its layout</p>
             </div>   
 
 <!-- différents articles du blog-->
-<!-- la div .infos est enfant de div .imgArticle et se suppose pour qu'au moment du survol elle apparaisse et fasse l'effet -->
+<!-- la div .infos est enfant de div .imgArticle et se superpose pour qu'au moment du survol elle apparaisse et fasse l'effet -->
     <!--article 1-->
             <div class="divArticles">
                 <div class="article">  
@@ -407,7 +452,7 @@
                     </div>
                 </div>
 
-        <!--article 2-->
+    <!--article 2-->
                 <div class="article"> 
                     <div class="imgArticle" >
                         <img src="CSS/img/blog1.png" alt="">
@@ -422,7 +467,7 @@
                         <a href="#" class="readMore">Read more</a>
                     </div>
                 </div>
-        <!--article 3-->
+    <!--article 3-->
                 <div class="article"> 
                     <div class="imgArticle" >
                         <img src="CSS/img/blog2.png" alt="">
@@ -442,27 +487,47 @@
         </section>
     </main>
 
-    <footer>
+    <footer id="reseauxFooter">
         <!-- partie reseaux -->
-        <div class="reseauxFooter">
-            <ul >
-                <li><a href="" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
-                <li><a href="" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
-                <li><a href="" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
-                <li><a href="" target="_blank"><i class="fa-brands fa-google-plus-g"></i></a></li>
-            </ul>
-        </div>
+        <div class="reseauxMentions">
+            <div class="reseauxFooter">
+                <ul>
+                    <li><a href="" target="_blank">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li><a href="" target="_blank">
+                        <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li><a href="" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                    </li>
+                    <li><a href="" target="_blank">
+                        <i class="fa-brands fa-google-plus-g"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
 
-        <!-- partie mentions -->
-        <div class="mentions">
-            <ul>
-                <li><a href="" target="_blank">Terms & condition</a></li>
-                <li><a href="" target="_blank">Privacy Policy</a></li>
-                <li><a href="" target="_blank">Contact Us</a></li>
-            </ul>
+            <!-- partie mentions -->
+            <div class="mentions">
+                <ul>
+                    <li>
+                        <a href="" target="_blank">Terms & condition</a> 
+                    </li>
+                    <li>
+                        <a href="" target="_blank">Privacy Policy</a>
+                    </li>
+                    <li>
+                        <a href="" target="_blank">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
         </div>
         
-        <small>2022c Kucra - Landing Page template by Pichforest</small>
+        <small>2022© Kucra - Landing Page template by Pichforest</small>
        
     </footer>
 

@@ -203,7 +203,7 @@ input{
 }
 
 /* how it works */
-.howItWorks{
+#howItWorks{
     background-color: #f6f6f6;
     padding: 60px;
 }
@@ -295,8 +295,8 @@ input{
 
 
 /* let's get started */
-
-.letsGo {
+/* quand on clic sur FAQ, l'image est trop basse, il faut la replacer */
+#letsGo {
     background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
      url("img/parallax.png");
     opacity: 0.8;
@@ -350,15 +350,20 @@ input{
 
 .logo li img {
     width: 100%;
-    /* height: 100%; */
     object-fit: cover;
+    opacity:0.2;
+    transition: 0.5s;
 }
 
+.logo li img:hover{
+    opacity: 1;
+    cursor: pointer;
+}
 
 
 /* digital creativity */
 
-.digitalCreative {
+#digitalCreative {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -416,7 +421,7 @@ input{
 
 /* our princing */
 
-.ourPricing{
+#ourPricing{
     background-color: #f6f6f6;
 }
 
@@ -478,6 +483,7 @@ input{
     justify-content: space-between;
 }
 
+/* mettre une double classe permet de définir des caractéristiques en plus */
 .details i.icon-green{
     color: green;
 }
@@ -520,7 +526,7 @@ input{
     left: 58px;
     top: -1px;
 }
-
+/* advanced est en position relative pour pouvoir la mettre plus haut que les deux autres */
 .advanced{
     position: relative;
     top: -30px;
@@ -595,7 +601,7 @@ input{
     /* border: 3px solid rgb(0, 251, 255); */
     color: white;
     font-size: 12px;
-    font-weight: 600;
+    font-weight: 400;
     text-align-last: left;
     padding:0 0 0 30px;
 }
@@ -626,10 +632,90 @@ input{
 
 /* footer */
 
+footer{
+    text-align: center;
+    background-color: rgb(43, 42, 42);
+    padding: 50px;
+}
 
+/*  liens réseaux */
 
+.reseauxFooter ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+    /* margin 0 et padding 0 évite tout espacement par défaut */
+    /* demander si vraiment utile */
+}
 
+.reseauxFooter i{
+    color: rgb(175, 175, 175);
+    font-size: 15px;
+    border: 1px solid rgb(175, 175, 175);
+    border-radius: 50%;
+    padding: 20px;
+    /* pourquoi le border de facebook n'est pas rond?! en changeant font size ou padding ça change rien */
+}
 
+/* liens mentions */
 
+.mentions ul{
+    /* display: flex; */
+    /* justify-content: center; */
+    list-style: none;
+    padding: 20px 0;
+    color: rgb(175, 175, 175);
+}
 
+.mentions li{
+    display: inline;
+}
+/* avantage ou non d'utiliser display: inline dans li seulement plutôt que display flex et jcc dans ul*/
 
+.mentions a{
+    color: rgb(175, 175, 175);
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.mentions li:not(:last-child):after {
+    content:' |';
+    padding: 0 20px;
+    color: rgb(175, 175, 175);
+}
+
+/* copywright */
+small{
+    display: block;
+    color: rgb(175, 175, 175);
+}
+
+/* fleche top */
+
+.fleche{
+    width: 50px;
+    height: 50px;
+}
+
+.fleche i{
+    color: white;
+    background-color: rgb(67, 67, 67);
+    font-size: 20px;
+    /* border: 1px solid black; */
+    border-radius: 50%;
+    padding: 15px;
+    display:flex;
+    justify-content: end;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+
+html {
+    /* scroll-behavior: smooth; */
+  }
+  /* ça fait plus mal qu'autre chose
+  censé faire remonter doucement la page... */
