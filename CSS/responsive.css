@@ -1,30 +1,330 @@
-/* faire un media querie par breakpoint */
 
-   
-@media (max-width : 1600px) {
-    .iconHamburger{
+/* lier la feuille de style à l'HTML!   */
+/* faire un media querie par breakpoint */
+/* quel ordre pour l'html responsive puis style ou style puis responsive? */
+
+ 
+
+/* pour le pc de plus de 992px
+les caractères sont sur la feuille style.css */
+
+
+/* pour les tablettes inférieures à 992px */
+@media screen and ( max-width : 992px ) {
+    
+/* page1 */
+/* partie supérieure */
+    .iconHamburger {
+        display: block;
+    }
+    
+    .iconHamburger a{
+        color: white;
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        font-size: 30px;
+    }
+
+    .navBar {
         display: none;
     }
-}
-@media (max-width : 992px) {
-    .navBar, .lienRsociaux{
-        display:none;
+
+    .lienRsociaux{
+        display: none;
     }
+/* ne sachant pas faire avec javascript ça disparait pour le moment */
+
+/* partie inférieure */
     .accueil{
-        display: block;
+        display: flex; 
+        flex-direction: column;
+    }
+    
+    .accueil .text{
+        width: 100%;
+        padding-bottom: 10px;
+    }
+    
+    .imgCat{
+      width: 50%;
+      padding: 10px 30px;
+    }
+    
+    /* features */
+    .cardPage2{
+        flex-direction: column;
+        padding: 30%;
+    }
+    
+    /* team */
+    .photoTeam{
+        flex-direction: column;
+        gap: 20px;
+        padding: 0 380px;
+    }
+    
+    .imgTeam {
+        border-radius: 30px;
+        padding-bottom: 0;
+    }
+    .person{
+        height: 200px;
+        filter: none;     
+    }
+    
+    .liensRteam {
+        opacity: 1;
+        top: 30px;
+        left:10px;
+        list-style: none;
+    }
+    
+    /* clients Says */
+    .logo{
+        flex-direction: column;
+    }
+    
+    .logo li img {
+        opacity:1;
+    }
+    
+    /* digital creativity */
+    
+    #digitalCreative {
         flex-direction: column;
         align-items: center;
-        max-width: 90%;
+        padding: 20px;
     }
-    .text{
-        width: 50%;
+    
+    .create{
+        width: 80%;
+        padding: 20px;
     }
-    .iconHamburger{
-        display: block;
+    
+    .creativity{
+        width: 60%;
+        padding: 20px;
+    }
+    
+    /* our price */
+    
+    .pricing{
+        flex-direction: column;
+        align-items: center;
+        padding: 50px;
+    }
+    
+    .advanced{
+        top: 0;
+    }
+    
+    
+    /* our blog */
+    
+    .divArticles{
+        flex-direction: column;
+        align-items: center;
     }
 }
 
-@media (max-width : 692px) {
+
+/* pour les telephones inférieur à 768px */
+
+@media screen and (max-width: 768px) {
     
+    
+    .sectionHeader{
+        padding: 20px;
+    }
+    
+    .sectionHeader h2{
+        font-size: 20px;
+    }
+    
+    .sectionHeader p{
+        font-size: 10px;
+        max-width: 100%;
+    }
+    
+    
+/* page1 */
+    .accueil .text{
+        width: 100%;
+        padding: 50px 30px;
+    }
+    
+    .imgCat{
+      width: 50%;
+      padding: 10px 30px;
+    }
+    #logo {
+        font-size: 100%;
+    }
+    
+    .accueil .text h1 {
+        font-size: 20px;
+    }
+    
+    .accueil .text p{
+        font-size: 10px;
+    }
+    
+    input{
+        width: 100%;
+    }
+    
+/* features */
+    .cardPage2{
+        padding: 5px 50px; 
+    }
+    
+    .card {
+        width: 100%;
+    }
+
+    .card i{
+        font-size: 25px;
+    }
+.card h3{
+    font-size: 20px;
+}
+
+.card p{
+    font-size: 15px;
 }
     
+/* team */
+    
+    .headerCteam h4{
+        font-size: 15px;
+    }
+    
+    .headerCteam p{
+        
+        font-size: 10px;
+    }
+    
+    .nom{
+        font-size: 10px;
+    }
+    
+    .job{
+        font-size: 10px;
+    }
+    
+    .photoTeam{
+        padding: 0 100px;
+    }
+
+    .imgTeam {
+        width: 100%;
+        border-radius: 50px;
+    }
+    .person{
+        width: 100%;
+    }
+    
+    .liensRteam {
+        top: 30px;
+        left: 5px;
+    }
+ 
+/* digital creativity */
+
+.create h3{
+    font-size: 20px;
+}
+
+.create p{
+    font-size: 10px;
+}
+
+
+/* our price */
+
+.cardPrice{
+    width: 200px;
+    height: 300px;
+    border-radius:10px;
+}
+
+.headerPrice {
+    font-size: 15px;
+}
+
+.headerPrice1{
+    font-size: 15px;
+}
+
+.price-color{
+    font-size: 30px;
+}
+
+.month{
+    font-size: 10px;
+}
+
+.details{
+    padding: 10px;
+    font-size: 10px;
+}
+
+.joinNow1{
+    width: 100%;
+    padding: 0 20px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.joinNow{
+    font-size: 15px;
+    padding: 0 20px;
+    border-radius: 5px;
+}
+.promo{
+    border-radius: 0 10px 0 10px;
+    width: 40px;
+    left: 22px;
+}
+
+/* our blog */
+
+    .article{
+        width: 200px;
+        height: 300px;
+    }
+
+    .imgArticle {
+        border-radius: 10px;
+    }
+
+    .imgArticle img {
+        width: 200px;
+    }
+
+    footer {
+        font-size: 10px;
+        padding: 30px;
+    }
+
+    .reseauxFooter i{
+        font-size: 10px;
+        padding: 10px;
+    }
+    
+    .mentions a{
+        font-size: 10px;
+    }
+    small{
+        font-size: 10px;
+    }
+}
+
+/* on ajoute des éléments pour les téléphones */
+@media (max-width: 480px) {
+   
+  
+/* apparement pas nécessaire */
+
+}
