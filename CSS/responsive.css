@@ -186,13 +186,13 @@ les caractères sont sur la feuille style.css */
     .card i{
         font-size: 25px;
     }
-.card h3{
-    font-size: 20px;
-}
+    .card h3{
+        font-size: 20px;
+    }
 
-.card p{
-    font-size: 15px;
-}
+    .card p{
+        font-size: 15px;
+    }
     
 /* team */
     
@@ -232,66 +232,66 @@ les caractères sont sur la feuille style.css */
  
 /* digital creativity */
 
-.create h3{
-    font-size: 20px;
-}
+    .create h3{
+        font-size: 20px;
+    }
 
-.create p{
-    font-size: 10px;
-}
+    .create p{
+        font-size: 10px;
+    }
 
 
 /* our price */
 
-.cardPrice{
-    width: 200px;
-    height: 300px;
-    border-radius:10px;
-}
+    .cardPrice{
+        width: 250px;
+        height: 320px;
+        border-radius:10px;
+    }
 
-.headerPrice {
-    font-size: 15px;
-}
+    .headerPrice {
+        font-size: 20px;
+    }
 
-.headerPrice1{
-    font-size: 15px;
-}
+    .headerPrice1{
+        font-size: 20px;
+    }
 
-.price-color{
-    font-size: 30px;
-}
+    .price-color{
+        font-size: 35px;
+    }
 
-.month{
-    font-size: 10px;
-}
+    .month{
+        font-size: 10px;
+    }
 
-.details{
-    padding: 10px;
-    font-size: 10px;
-}
+    .details{
+        padding: 10px;
+        font-size: 12px;
+    }
 
-.joinNow1{
-    width: 100%;
-    padding: 0 20px;
-    border-radius: 5px;
-    font-size: 15px;
-}
+    .joinNow1{
+        width: 100%;
+        padding: 0 20px;
+        border-radius: 5px;
+        font-size: 15px;
+    }
 
-.joinNow{
-    font-size: 15px;
-    padding: 0 20px;
-    border-radius: 5px;
-}
-.promo{
-    border-radius: 0 10px 0 10px;
-    width: 40px;
-    left: 22px;
-}
+    .joinNow{
+        font-size: 15px;
+        padding: 0 20px;
+        border-radius: 5px;
+    }
+    .promo{
+        border-radius: 0 10px 0 10px;
+        width: 45px;
+        left: 30px;
+    }
 
 /* our blog */
 
     .article{
-        width: 200px;
+        width: 250px;
         height: 300px;
     }
 
@@ -300,7 +300,7 @@ les caractères sont sur la feuille style.css */
     }
 
     .imgArticle img {
-        width: 200px;
+        width: 250px;
     }
 
     footer {
@@ -325,6 +325,25 @@ les caractères sont sur la feuille style.css */
 @media (max-width: 480px) {
    
   
-/* apparement pas nécessaire */
+/* features */
+.cardPage2{
+    padding: 5px 50px; 
+}
+
+.card {
+    width: 100%;
+}
+
+.card i{
+    font-size: 25px;
+}
+.card h3{
+    font-size: 20px;
+}
+
+.card p{
+    font-size: 15px;
+    padding: 0;
+}
 
 }
