@@ -654,12 +654,18 @@ footer{
 }
 
 .reseauxFooter i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px; width: 50px;
     color: rgb(175, 175, 175);
     font-size: 15px;
     border: 1px solid rgb(175, 175, 175);
     border-radius: 50%;
-    padding: 20px;
+    /* padding: 20px; */
     /* pourquoi le border de facebook n'est pas rond?! en changeant font size ou padding ça change rien */
+  /* parfois il faut mettre des hauteurs mais c'est à vérifier en fonction du responsive */
+
 }
 
 /* liens mentions */
@@ -676,6 +682,7 @@ footer{
     display: inline;
 }
 /* avantage ou non d'utiliser display: inline dans li seulement plutôt que display flex et jcc dans ul*/
+/* faut voir le comportement natif entre block et inline et ce qu'on veut avoir à l'arrivée */
 
 .mentions a{
     color: rgb(175, 175, 175);
@@ -703,14 +710,15 @@ small{
 }
 
 .fleche i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px; width: 50px;
     color: white;
     background-color: rgb(67, 67, 67);
     font-size: 20px;
     /* border: 1px solid black; */
     border-radius: 50%;
-    padding: 15px;
-    display:flex;
-    justify-content: end;
     position: fixed;
     right: 20px;
     bottom: 20px;
